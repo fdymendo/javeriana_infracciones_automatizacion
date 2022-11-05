@@ -67,7 +67,7 @@ public class RegistroInfraccionTest {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("Toastify__toast-body")));
 
-        String query = "select * from infraction where vehicle_id" ;
+        String query = "select * from infraction" ;
 
         ResultSet resultSet = stmt.executeQuery(query);
 
